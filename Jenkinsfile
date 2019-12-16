@@ -1,6 +1,5 @@
-palladioBuild {
-	webserverDir = 'p2-mirrors/descartes-dlim'
-	updateSiteLocation = 'target/repository'
-	skipCodeQuality = true
-	skipNotification = true
+PalladioPipeline {
+    deployUpdatesite 'target/repository'
+    skipQualityMetrics = true
+    skipNotification = true
 }
